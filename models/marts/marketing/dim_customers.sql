@@ -1,3 +1,6 @@
+
+
+
 with 
 
 customers as (
@@ -37,8 +40,7 @@ final as (
         customer_orders.lifetime_value
     from customers
 
-    left join customer_orders
-        on customers.customer_id = customer_orders.customer_id
+    left join customer_orders using (customer_id)
 )
 
 select * from final

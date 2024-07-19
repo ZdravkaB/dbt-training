@@ -3,6 +3,6 @@ version: 2
 sources:
   - name: stripe
     database: TIL_PORTFOLIO_PROJECTS
-    schema: EH_jaffle
+    schema:  stripe
     tables:
       - name: payment

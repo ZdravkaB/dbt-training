@@ -2,9 +2,24 @@ version: 2
 
 sources:
   - name: jaffle_shop
+    description: a clone of a Postgres application database
     database: TIL_PORTFOLIO_PROJECTS
-    schema: EH_jaffle
+    schema: jaffle_shop
     tables:
       - name: customers
+        description: Raw customer data
+        columns:
+          - name: id
+            description: PK for customer data
       - name: orders
+        description: row orders data
+        loaded_at_field: _etl_loaded_at
+        freshness: 
+          error_after:
+            count: 2
+            period: day
+          warn_after:
+            count: 1
+            period: day
+        
       - name: payment
