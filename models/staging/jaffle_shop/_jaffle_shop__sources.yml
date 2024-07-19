@@ -2,6 +2,7 @@ version: 2
 
 sources:
   - name: jaffle_shop
+    description: a clone of a Postgres application database
     database: TIL_PORTFOLIO_PROJECTS
     schema: jaffle_shop
     tables:
