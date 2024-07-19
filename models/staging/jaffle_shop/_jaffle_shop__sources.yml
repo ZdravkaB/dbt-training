@@ -3,7 +3,7 @@ version: 2
 sources:
   - name: jaffle_shop
     database: TIL_PORTFOLIO_PROJECTS
-    schema: EH_jaffle
+    schema: jaffle_shop
     tables:
       - name: customers
       - name: orders

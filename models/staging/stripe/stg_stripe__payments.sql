@@ -16,7 +16,7 @@ transformed as (
     status as payment_status,
 
     -- raw data has payment in cents so convert to $
-    {{ cents_to_dollars( 'amount' , 6) }}
+   amount * 100 as amount_$
 
     from source
 
