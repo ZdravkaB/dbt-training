@@ -18,8 +18,8 @@ models:
         tests:
           - unique
           - not_null
-      - name: status
-        description: "{{ doc('order_status') }}"
+      - name: ORDER_STATUS
+        description: doc
         tests:
           - accepted_values:
               values:
